@@ -1,0 +1,39 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+
+
+\author{Nicolas Blais St-Laurent \tiny inh}
+\title{VM101}
+\date{\today}
+
+\pgfplotsset{
+	 every axis/.style={
+		 width=\textwidth,
+		 enlarge x limits=false,
+		 xlabel=Temps \small (s),
+	 },
+	 every axis plot post/.style={
+		 mark=none,
+	 },
+}
+
+\pgfplotsset{
+	 halfheight/.style={
+		 height=0.45\textheight,
+	 },
+}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}
+	\frametitle{Pression contrôlée}
+	\input{fig/fig-pc.tex}
+\end{frame}
+
+\end{document}

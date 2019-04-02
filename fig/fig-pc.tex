@@ -1,0 +1,16 @@
+\begin{tikzpicture}
+	\begin{axis}[
+			halfheight,
+			ylabel=Pression \small (hPa₂)
+			]
+\addplot table {dat/pc.dat};
+\end{axis}
+\end{tikzpicture}\\
+\begin{tikzpicture}
+	\begin{axis}[
+			halfheight,
+			ylabel=Débit \small (l/s)
+			]
+	\addplot table [y=Flung] {dat/pc.dat};
+\end{axis}
+\end{tikzpicture}
